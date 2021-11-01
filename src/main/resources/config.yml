@@ -1,0 +1,41 @@
+#全局配置
+options:
+  database:
+    #sqlite mysql sqlite不需配置下列项
+    type: sqlite
+    host: "localhost"
+    port: "3306"
+    user: "root"
+    password: "root"
+    database: "minecraft"
+  #属性识别Lore
+  lore: "元素属性"
+#金属性配置
+golden:
+  #识别Lore
+  #例: 元素属性: 金元素  游戏中Lore可以使用彩字空格只需包含关键字即可            &6元&5素&7属&4性:    &1金&2元&3素
+  lore: "金元素"
+  #相生时提升的伤害百分比
+  help: '0.1~0.2'
+  #相克时降低的伤害百分比
+  restrain: '0.1~0.2'
+#木属性配置
+wood:
+  lore: "木元素"
+  help: '0.1~0.2'
+  restrain: '0.1~0.2'
+#水属性配置
+water:
+  lore: "水元素"
+  help: '0.1~0.2'
+  restrain: '0.1~0.2'
+#火属性配置
+fire:
+  lore: "火元素"
+  help: '0.1~0.2'
+  restrain: '0.1~0.2'
+#土属性配置
+earth:
+  lore: "土元素"
+  help: '0.5~0.6'
+  restrain: '0.1~0.2'
