@@ -11,10 +11,10 @@ import me.kzheart.fiveelements.element.ElementType
  *
  */
 object GoldenElement : Element {
-    override val elementName: String by lazy { Element.goldenLore}
+    override val elementName: String by lazy { Element.goldenLore }
     override val elementType = ElementType.GOLDEN
-    override fun getHelpElementType() = ElementType.EARTH
-    override fun getRestrainElementType() = ElementType.FIRE
+    override fun getHelpElementType() = listOf(ElementType.EARTH, ElementType.WATER)
+    override fun getRestrainElementType() = listOf(ElementType.FIRE, ElementType.WOOD)
     override fun toString() = "golden"
 
 }

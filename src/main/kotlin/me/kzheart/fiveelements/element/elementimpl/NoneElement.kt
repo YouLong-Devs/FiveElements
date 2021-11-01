@@ -8,17 +8,11 @@ object NoneElement : Element {
     override val elementName: String = "null"
     override val elementType = ElementType.NONE
 
-    override fun elementRelation(element: Element): Relation {
-        return Relation.NORMAL
-    }
+    override fun elementRelation(element: Element) = Relation.NORMAL
 
-    override fun getHelpElementType(): ElementType {
-        return ElementType.NONE;
-    }
+    override fun getHelpElementType() = emptyList<ElementType>()
 
-    override fun getRestrainElementType(): ElementType {
-        return ElementType.NONE;
-    }
+    override fun getRestrainElementType() = emptyList<ElementType>()
 
     override fun getHelpDamagePercent(): Double {
         return 0.0

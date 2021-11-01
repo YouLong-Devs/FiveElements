@@ -52,11 +52,9 @@ interface Element {
     abstract val elementName: String
     abstract val elementType: ElementType
     fun elementRelation(element: Element): Relation {
-        return when (element.elementType) {
-            getHelpElementType() -> Relation.HELP
-            getRestrainElementType() -> Relation.RESTRAIN
-            else -> Relation.NORMAL
-        }
+        if (getHelpElementType().contains(element.elementType)) return Relation.HELP
+        if (getRestrainElementType().contains(element.elementType)) return Relation.RESTRAIN
+        return Relation.NORMAL
     }
 
     fun elementRestrain(element: Element): Boolean {
@@ -71,9 +69,9 @@ interface Element {
         return elementRelation(element) == Relation.NORMAL
     }
 
-    fun getHelpElementType(): ElementType
+    fun getHelpElementType(): List<ElementType>
 
-    fun getRestrainElementType(): ElementType
+    fun getRestrainElementType(): List<ElementType>
 
     fun getHelpDamagePercent(): Double {
         return ConfManager.configMapping[this]!!.randomHelp()

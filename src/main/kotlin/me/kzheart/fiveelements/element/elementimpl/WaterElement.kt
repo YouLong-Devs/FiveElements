@@ -15,9 +15,9 @@ object WaterElement : Element {
     override val elementName: String by lazy { Element.waterLore }
     override val elementType = ElementType.WATER
 
-    override fun getHelpElementType() = ElementType.GOLDEN
+    override fun getHelpElementType() = listOf(ElementType.GOLDEN, ElementType.WOOD)
 
-    override fun getRestrainElementType() = ElementType.EARTH
+    override fun getRestrainElementType() = listOf(ElementType.EARTH, ElementType.FIRE)
 
     override fun toString() = "water"
 
