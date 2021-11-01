@@ -12,6 +12,7 @@ taboolib {
         dependencies {
             name("MythicMobs")
             name("SkillAPI")
+            name("AttributePlus")
         }
     }
     install("common")
