@@ -13,6 +13,7 @@ taboolib {
             name("MythicMobs")
             name("SkillAPI")
             name("AttributePlus")
+            name("PlaceholderAPI").optional(true)
         }
     }
     install("common")
@@ -29,6 +30,7 @@ taboolib {
 repositories {
     mavenLocal()
     mavenCentral()
+    maven("https://repo.extendedclip.com/content/repositories/placeholderapi/")
 }
 
 dependencies {

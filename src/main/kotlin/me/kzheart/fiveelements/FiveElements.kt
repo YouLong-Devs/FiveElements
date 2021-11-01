@@ -10,6 +10,7 @@ import taboolib.common.platform.Plugin
 import taboolib.common.platform.function.info
 import taboolib.common.platform.function.submit
 import taboolib.common.platform.service.PlatformExecutor
+import taboolib.platform.compat.PlaceholderExpansion
 
 /**
  *

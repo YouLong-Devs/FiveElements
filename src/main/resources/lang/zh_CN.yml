@@ -1,4 +1,4 @@
 select-player-element: "&6玩家 {0} 主元素为 {1}"
 select-player-not-element: "玩家 {0} 当前没有主元素"
-player-set-element: "玩家{ 0} 主元素被设置为 {1} "
+player-set-element: "玩家 {0} 主元素被设置为 {1} "
 config-reload: "配置已重载"

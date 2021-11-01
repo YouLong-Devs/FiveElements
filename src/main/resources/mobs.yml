@@ -1,8 +1,7 @@
 #金属性怪物ID
-golden-mobs:
-  - 'SkeletalKnight'
+golden-mobs: [ ]
 #木属性怪物ID
-wood-mbos: [ ]
+wood-mobs: [ ]
 #水属性怪物ID
 water-mobs: [ ]
 #火属性怪物ID
